@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jambe Pizza | Sabor na Lenha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!-- CABEÇALHO -->
+    <header class="cabecalho"> 
+        <div class="container cabecalho-conteudo"> 
+            <a class="logo-marca" href="#inicio">
+                <img src="img/jambepizza.png" alt="Jambe Pizza" class="logo-img-header">
+            </a>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#pedido">Monte seu Pedido</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio"> 
+            <div class="container hero-conteudo">
+                <div>
+                    <p class="destaque">Feito na Lenha</p>
+                    <h1>A pizza artesanal perfeita, crocante e irresistível.</h1>
+                    <p class="hero-texto">Escolha seus sabores favoritos, defina as quantidades e calcule a taxa de entrega em tempo real.</p>
+                    <a class="botao" href="#cardapio">Ver cardápio</a> 
+                </div>
+                <!-- Logo principal sem o retângulo de fundo -->
+                <div class="hero-ilustracao-limpa">
+                    <img src="img/jambepizza.png" alt="Logo Jambe Pizza" class="logo-img-hero-grande">
+                </div> 
+            </div>
+        </section>
+
+        <!-- CARDÁPIO -->
+        <section class="cardapio" id="cardapio">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="destaque">Nosso cardápio</p>
+                    <h2>Escolha suas receitas favoritas</h2>
+                </div>
+
+                <div class="grade-produtos">
+                    <!-- Pizza 1: Calabrisa -->
+                    <article class="card" data-disponivel="true"> 
+                        <span class="selo">Mais Vendida</span> 
+                        <div class="card-img-container">
+                            <img src="img/calabrisa.jpg" alt="Calabrisa">
+                        </div>
+                        <h3>Calabrisa</h3> 
+                        <p>Pizza de calabresa com cream cheese e bastante orégano e cebola roxa.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 39,90</strong> 
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Calabrisa" data-valor="39.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizza 2: Cigarro de Palha -->
+                    <article class="card card-destaque" data-disponivel="true"> 
+                        <span class="selo">Especial da Casa</span> 
+                        <div class="card-img-container">
+                            <img src="img/cigarrodepalha.jpg" alt="Cigarro de Palha">
+                        </div>
+                        <h3>Cigarro de Palha</h3>
+                        <p>Pizza de carne de sol com cream cheese e queijo coalho assado.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 49,90</strong>
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Cigarro de Palha" data-valor="49.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizza 3: Flor da África -->
+                    <article class="card" data-disponivel="true"> 
+                        <span class="selo">Exclusiva</span> 
+                        <div class="card-img-container">
+                            <img src="img/flordaafrica.jpg" alt="Flor da África">
+                        </div>
+                        <h3>Flor da África</h3>
+                        <p>Pizza com carne de cordeiro, queijo e tâmaras.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 59,90</strong>
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Flor da África" data-valor="59.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizza 4: Marguerita -->
+                    <article class="card" data-indisponivel="true">
+                        <div class="card-img-container">
+                            <img src="img/marguerita.jpg" alt="Marguerita">
+                        </div>
+                        <h3>Marguerita</h3>
+                        <p>Clássica marguerita com molho artesanal, muçarela, tomate fresco e manjericão.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 29,90</strong>
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Marguerita" data-valor="29.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizza 5: Quatro Queijos -->
+                    <article class="card" data-disponivel="true">
+                        <div class="card-img-container">
+                            <img src="img/quatroqueijos.jpg" alt="Quatro Queijos">
+                        </div>
+                        <h3>Quatro Queijos</h3>
+                        <p>Clássica quatro queijos com seleção especial de queijos derretidos na lenha.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 29,90</strong>
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Quatro Queijos" data-valor="29.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Pizza 6: Portuguesa -->
+                    <article class="card" data-disponivel="true">
+                        <div class="card-img-container">
+                            <img src="img/portuguesa.jpg" alt="Portuguesa">
+                        </div>
+                        <h3>Portuguesa</h3>
+                        <p>Clássica portuguesa com presunto, ovos, cebola, azeitonas e cobertura caprichada.</p>
+                        <div class="card-rodape">
+                            <strong>R$ 29,90</strong>
+                            <div class="controles-produto">
+                                <label class="label-qtd">Qtd (1-5): <input type="number" class="qtd-item" min="1" max="5" value="1"></label>
+                                <label><input type="checkbox" class="check-pizza" data-nome="Portuguesa" data-valor="29.90"> Selecionar</label>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PEDIDO E CHECKOUT (Sem a coluna de regras) -->
+        <section class="pedido" id="pedido"> 
+            <div class="container pedido-container-centralizado">
+                <div class="painel-pedido-completo">
+                    <div class="cabecalho-painel">
+                        <span class="destaque-pequeno">Finalize o Pedido</span>
+                        <h2>Endereço, Taxa e Resumo</h2>
+                    </div>
+                    
+                    <form id="form-whatsapp" class="form-checkout">
+                        <div class="bloco-adicionais">
+                            <h3>Capriche nos Adicionais <span class="badge-preco">+R$ 5,00 cada</span></h3>
+                            <div class="grid-adicionais">
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Cheddar" data-valor="5.00"> Cheddar</label>
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Cream Cheese" data-valor="5.00"> Cream Cheese</label>
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Bacon" data-valor="5.00"> Bacon</label>
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Calabresa" data-valor="5.00"> Calabresa</label>
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Queijo Coalho" data-valor="5.00"> Queijo Coalho</label>
+                                <label class="check-label"><input type="checkbox" class="check-adicional" data-nome="Batata Palha" data-valor="5.00"> Batata Palha</label>
+                            </div>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="nome">Seu Nome Completo</label>
+                            <input type="text" id="nome" required placeholder="Ex: Maria Souza">
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="bairro">Seu Bairro</label>
+                            <select id="bairro" required>
+                                <option value="">-- Selecione o Bairro --</option>
+                                <option value="pindorama">Pindorama (R$ 5,00)</option>
+                                <option value="sao judas tadeu">São Judas Tadeu (R$ 8,00)</option>
+                                <option value="centro/igaracu">Centro e Imediações do Bairro Igaraçu (R$ 10,00)</option>
+                                <option value="ilha grande">Ilha Grande de Santa Isabel (R$ 18,00)</option>
+                                <option value="nassau">Imediações da Nassau (R$ 14,00)</option>
+                                <option value="demais">Demais Bairros (R$ 6,00)</option>
+                            </select>
+                        </div>
+
+                        <div class="grupo-input">
+                            <label for="endereco">Rua e Número</label>
+                            <input type="text" id="endereco" required placeholder="Ex: Av. Principal, 456">
+                        </div>
+
+                        <div class="recibo-caixa">
+                            <h4>Resumo do Pedido</h4>
+                            <div id="lista-resumo" class="lista-resumo-itens">
+                                <p class="placeholder-resumo">Nenhuma pizza selecionada.</p>
+                            </div>
+                            <div class="recibo-linha">
+                                <span>Taxa de Entrega:</span>
+                                <span id="taxa-entrega-el">R$ 0,00</span>
+                            </div>
+                            <div class="recibo-linha total-destaque">
+                                <span>Total Geral:</span>
+                                <span id="valor-total">R$ 0,00</span>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="botao-whatsapp">
+                            <span>Enviar Pedido via WhatsApp</span> 🚀
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer> 
+        <div class="container rodape-conteudo">
+            <div>
+                <strong>Jambe Pizza</strong>
+                <p>O fluxo perfeito do sabor na lenha.</p>
+            </div>
+            <div>
+                <p>Terça a Domingo · 18h às 23h30</p>
+                <p>Delivery Inteligente</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js" defer></script>
+</body>
+</html>
