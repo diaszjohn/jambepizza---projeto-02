@@ -6,11 +6,11 @@ Um sistema web moderno, responsivo e intuitivo desenvolvido para uma pizzaria, p
 
 ## ✨ Funcionalidades
 
-* **Cardápio Interativo:** Categorias organizadas (Pizzas Salgadas, Doces, Bebidas e Combos).
-* **Sistema de Carrinho:** Adição, remoção e atualização dinâmica de itens com cálculo automático do valor total.
-* **Integração com WhatsApp:** Geração automática de uma mensagem formatada com os itens do pedido, endereço de entrega e forma de pagamento para agilizar o atendimento.
-* **Design Responsivo:** Otimizado para funcionamento perfeito em smartphones, tablets e computadores.
-* **Interface Moderna:** Visual limpo e atraente com foco na experiência do usuário (UX).
+*Cardápio Interativo*: Categorias organizadas (Apenas 6 sabores de pizza atualmente).
+*Sistema de Carrinho*: Adição, remoção e atualização dinâmica de itens com cálculo automático do valor total.
+*Integração com WhatsApp:* Geração automática de uma mensagem formatada com os itens do pedido, endereço de entrega e forma de pagamento para agilizar o atendimento.
+*Design Responsivo:* Otimizado para funcionamento perfeito em smartphones, tablets e computadores.
+*Interface Moderna:* Visual limpo e atraente com foco na experiência do usuário (UX).
 
 ## 🚀 Tecnologias Utilizadas
 
